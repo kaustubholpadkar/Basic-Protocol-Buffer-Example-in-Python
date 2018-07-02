@@ -1,0 +1,9 @@
+syntax = "proto2";
+
+package point_protocol;
+
+message Point {
+  optional string label = 1;
+  required float x = 2;
+  required float y = 3;
+}

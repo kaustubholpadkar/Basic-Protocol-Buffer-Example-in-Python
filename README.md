@@ -20,6 +20,7 @@ message Point {
 ```terminal
 $ protoc -I=$SRC_DIR --python_out=. point.proto
 ```
+
 ## Step 3 : Create 'write.py' to write point object to file
 
 ```python
@@ -54,4 +55,12 @@ print(point.label)
 print(point.x)
 print(point.y)
 
+```
+
+## Output
+```terminal
+$ python read.py
+first_point
+3.0
+4.0
 ```
